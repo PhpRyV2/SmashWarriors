@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.5.0" xmlns="http://www.collada.org/2008/03/COLLADASchema">
+	<asset>
+		<contributor>
+			<authoring_tool>BrawlBox</authoring_tool>
+		</contributor>
+		<created>2015-01-20T02:22:14Z</created>
+		<modified>2015-01-20T02:22:14Z</modified>
+		<unit meter="0.01" name="centimeter" />
+		<up_axis>Y_UP</up_axis>
+	</asset>
+	<library_images>
+		<image id="eff_enem_MA_e064_wind01_M-image" name="eff_enem_MA_e064_wind01_M">
+			<init_from>
+				<ref>eff_enem_MA_e064_wind01_M.png</ref>
+			</init_from>
+		</image>
+	</library_images>
+	<library_materials>
+		<material id="SwordAttackN_M">
+			<instance_effect url="#SwordAttackN_M-fx" />
+		</material>
+	</library_materials>
+	<library_effects>
+		<effect id="SwordAttackN_M-fx" name="SwordAttackN_M">
+			<profile_COMMON>
+				<newparam sid="eff_enem_MA_e064_wind01_M-surface">
+					<surface type="2D">
+						<init_from>
+							<ref>eff_enem_MA_e064_wind01_M-image</ref>
+						</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="eff_enem_MA_e064_wind01_M-sampler">
+					<sampler2D>
+						<source>eff_enem_MA_e064_wind01_M-surface</source>
+						<instance_image url="#eff_enem_MA_e064_wind01_M-image" />
+						<wrap_s>WRAP</wrap_s>
+						<wrap_t>CLAMP</wrap_t>
+						<minfilter>LINEAR</minfilter>
+						<magfilter>LINEAR</magfilter>
+					</sampler2D>
+				</newparam>
+				<technique sid="COMMON">
+					<phong>
+						<diffuse>
+							<texture texture="eff_enem_MA_e064_wind01_M-sampler" texcoord="TEXCOORD0" />
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_geometries>
+		<geometry id="polygon0" name="polygon0">
+			<mesh>
+				<source id="polygon0_Positions">
+					<float_array id="polygon0_PosArr" count="90">-0.376221 28.38686 -12.8483 5.14927 30.35757 -7.500809 2.328741 7.158494 3.089437 8.378123 29.7247 5.325298 2.88422 6.890123 4.365649 8.127901 24.44957 14.57114 2.938125 6.415883 5.767016 6.38116 18.09735 21.92423 2.362679 5.115128 6.708341 4.584139 11.96676 27.88913 -0.012199 8.330829 30.81502 1.117582 3.744565 7.454105 -8.999625 3.77427 30.60152 -0.933961 2.13793 7.75245 -1.950726 1.855828 6.786194 -21.07294 0.316322 21.35632 -25.08411 -0.174817 10.34161 -2.155101 1.744868 6.010496 -1.934783 1.82537 5.006718 -19.04736 24.17083 -10.94248 -10.7593 25.94044 -13.5406 1.003888 7.025466 2.103227 1.872235 7.09198 2.404251 -1.379102 2.392465 4.993613 -1.565933 2.190427 4.886125 -11.42259 12.53953 -12.42144 -15.41929 8.963669 -12.854 -1.752763 1.988389 4.778637 -18.74926 5.387811 -11.02719 -23.04534 1.741322 -5.850143</float_array>
+					<technique_common>
+						<accessor source="#polygon0_PosArr" count="30" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Normals">
+					<float_array id="polygon0_NormArr" count="69">-0.601623 0.423448 0.677305 -0.844078 0.300135 0.444354 -0.833416 0.294114 0.467884 -0.955886 0.227186 0.186195 -0.964809 0.257956 0.051021 -0.9578 0.287429 0.001976 -0.897952 0.436742 -0.05421 -0.856871 0.509302 -0.079899 -0.593982 0.782287 -0.18765 -0.331923 0.927336 -0.172845 -0.133793 0.988174 -0.074914 -0.075808 0.996133 0.044408 -0.145581 0.950758 0.273616 0.089364 0.667192 0.739506 -0.141413 0.578562 0.803286 -0.118577 0.588004 0.800119 -0.464146 0.464754 0.754037 -0.716552 0.337991 0.610177 -0.660143 0.393941 0.639548 -0.639472 0.442447 0.628741 -0.565303 0.518272 0.641737 -0.470285 0.654721 0.591753 -0.323599 0.791586 0.51834</float_array>
+					<technique_common>
+						<accessor source="#polygon0_NormArr" count="23" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Colors0">
+					<float_array id="polygon0_ColorArr0" count="16">1 0.9843138 0.3803922 0 1 1 0.9529412 0 1 0.9529412 0 0 1 0.9686275 0.1882353 0</float_array>
+					<technique_common>
+						<accessor source="#polygon0_ColorArr0" count="4" stride="4">
+							<param name="R" type="float" />
+							<param name="G" type="float" />
+							<param name="B" type="float" />
+							<param name="A" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_UVs0">
+					<float_array id="polygon0_UVArr0" count="60">0 0.876587 0 0.811129 1 0.876587 0 0.74567 1 0.811128 0 0.712941 1 0.745669 0 0.680211 1 0.680211 0 0.647482 0 0.614753 1 0.647481 0 0.549294 1 0.549293 1 0.483835 0 0.483835 0 0.418377 1 0.418376 1 0.287459 0 0.992349 0 0.934468 1 0.992349 1 0.934468 1 0.09401298 1 0.158007 0 0.09401298 0 0.158007 1 0.222 0 0.222001 0 0.287459</float_array>
+					<technique_common>
+						<accessor source="#polygon0_UVArr0" count="30" stride="2">
+							<param name="S" type="float" />
+							<param name="T" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="polygon0_Vertices">
+					<input semantic="POSITION" source="#polygon0_Positions" />
+				</vertices>
+				<triangles material="SwordAttackN_M" count="28">
+					<input semantic="VERTEX" source="#polygon0_Vertices" offset="0" />
+					<input semantic="NORMAL" source="#polygon0_Normals" offset="1" />
+					<input semantic="COLOR" source="#polygon0_Colors0" set="0" offset="2" />
+					<input semantic="TEXCOORD" source="#polygon0_UVs0" set="0" offset="3" />
+					<p>2 2 0 2 1 1 1 1 0 0 0 0 3 3 1 3 1 1 1 1 2 2 0 2 4 3 1 4 3 3 1 3 2 2 0 2 5 4 1 5 3 3 1 3 4 3 1 4 6 4 1 6 5 4 1 5 4 3 1 4 7 5 1 7 5 4 1 5 6 4 1 6 8 6 1 8 7 5 1 7 6 4 1 6 9 7 1 9 7 5 1 7 8 6 1 8 10 8 1 10 9 7 1 9 8 6 1 8 11 8 1 11 10 8 1 10 8 6 1 8 12 9 1 12 10 8 1 10 11 8 1 11 13 9 1 13 12 9 1 12 11 8 1 11 14 10 1 14 12 9 1 12 13 9 1 13 14 10 1 14 15 10 1 15 12 9 1 12 16 11 1 16 15 10 1 15 14 10 1 14 17 11 1 17 16 11 1 16 14 10 1 14 18 12 1 18 16 11 1 16 17 11 1 17 21 15 2 21 20 14 3 20 19 13 2 19 22 16 3 22 20 14 3 20 21 15 2 21 22 16 3 22 0 0 0 0 20 14 3 20 2 2 0 2 0 0 0 0 22 16 3 22 25 19 2 25 24 18 3 24 23 17 2 23 26 20 3 26 24 18 3 24 25 19 2 25 26 20 3 26 27 21 0 27 24 18 3 24 28 22 0 28 27 21 0 27 26 20 3 26 18 12 1 18 29 12 1 29 16 11 1 16 27 21 0 27 29 12 1 29 18 12 1 18 27 21 0 27 28 22 0 28 29 12 1 29</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_controllers>
+		<controller id="polygon0_Controller">
+			<skin source="#polygon0">
+				<bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+				<source id="polygon0_Joints">
+					<Name_array id="polygon0_JointArr" count="1">eff_enem_MA_e063_Wind_SwordAttackN_M</Name_array>
+					<technique_common>
+						<accessor source="#polygon0_JointArr" count="1">
+							<param name="JOINT" type="Name" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Matrices">
+					<float_array id="polygon0_MatArr" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_MatArr" count="1" stride="16">
+							<param type="float4x4" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Weights">
+					<float_array id="polygon0_WeightArr" count="1">1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_WeightArr" count="1">
+							<param type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#polygon0_Joints" />
+					<input semantic="INV_BIND_MATRIX" source="#polygon0_Matrices" />
+				</joints>
+				<vertex_weights count="30">
+					<input semantic="JOINT" offset="0" source="#polygon0_Joints" />
+					<input semantic="WEIGHT" offset="1" source="#polygon0_Weights" />
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+					<v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+	</library_controllers>
+	<library_visual_scenes>
+		<visual_scene id="RootNode" name="RootNode">
+			<node id="eff_enem_MA_e063_Wind_SwordAttackN_M" name="eff_enem_MA_e063_Wind_SwordAttackN_M" sid="eff_enem_MA_e063_Wind_SwordAttackN_M" type="JOINT" />
+			<node id="polygon0" name="polygon0" type="NODE">
+				<instance_controller url="#polygon0_Controller">
+					<skeleton>#eff_enem_MA_e063_Wind_SwordAttackN_M</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="SwordAttackN_M" target="#SwordAttackN_M">
+								<bind_vertex_input semantic="TEXCOORD0" input_semantic="TEXCOORD" input_set="0" />
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#RootNode" />
+	</scene>
+</COLLADA>

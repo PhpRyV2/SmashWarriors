@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.5.0" xmlns="http://www.collada.org/2008/03/COLLADASchema">
+	<asset>
+		<contributor>
+			<authoring_tool>BrawlBox</authoring_tool>
+		</contributor>
+		<created>2015-01-20T03:05:21Z</created>
+		<modified>2015-01-20T03:05:21Z</modified>
+		<unit meter="0.01" name="centimeter" />
+		<up_axis>Y_UP</up_axis>
+	</asset>
+	<library_images>
+		<image id="WpnPrimBeamSwordA-image" name="WpnPrimBeamSwordA">
+			<init_from>
+				<ref>WpnPrimBeamSwordA.png</ref>
+			</init_from>
+		</image>
+		<image id="WpnPrimBeamSwordB-image" name="WpnPrimBeamSwordB">
+			<init_from>
+				<ref>WpnPrimBeamSwordB.png</ref>
+			</init_from>
+		</image>
+	</library_images>
+	<library_materials>
+		<material id="WpnPrimBeamSword_BeamSwordA">
+			<instance_effect url="#WpnPrimBeamSword_BeamSwordA-fx" />
+		</material>
+		<material id="WpnPrimBeamSword_BeamSwordB">
+			<instance_effect url="#WpnPrimBeamSword_BeamSwordB-fx" />
+		</material>
+		<material id="WpnPrimBeamSword_BeamSwordBH">
+			<instance_effect url="#WpnPrimBeamSword_BeamSwordBH-fx" />
+		</material>
+	</library_materials>
+	<library_effects>
+		<effect id="WpnPrimBeamSword_BeamSwordA-fx" name="WpnPrimBeamSword_BeamSwordA">
+			<profile_COMMON>
+				<newparam sid="WpnPrimBeamSwordA-surface">
+					<surface type="2D">
+						<init_from>
+							<ref>WpnPrimBeamSwordA-image</ref>
+						</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="WpnPrimBeamSwordA-sampler">
+					<sampler2D>
+						<source>WpnPrimBeamSwordA-surface</source>
+						<instance_image url="#WpnPrimBeamSwordA-image" />
+						<wrap_s>CLAMP</wrap_s>
+						<wrap_t>CLAMP</wrap_t>
+						<minfilter>LINEAR</minfilter>
+						<magfilter>LINEAR</magfilter>
+					</sampler2D>
+				</newparam>
+				<technique sid="COMMON">
+					<phong>
+						<diffuse>
+							<texture texture="WpnPrimBeamSwordA-sampler" texcoord="TEXCOORD0" />
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="WpnPrimBeamSword_BeamSwordB-fx" name="WpnPrimBeamSword_BeamSwordB">
+			<profile_COMMON>
+				<newparam sid="WpnPrimBeamSwordB-surface">
+					<surface type="2D">
+						<init_from>
+							<ref>WpnPrimBeamSwordB-image</ref>
+						</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="WpnPrimBeamSwordB-sampler">
+					<sampler2D>
+						<source>WpnPrimBeamSwordB-surface</source>
+						<instance_image url="#WpnPrimBeamSwordB-image" />
+						<wrap_s>WRAP</wrap_s>
+						<wrap_t>WRAP</wrap_t>
+						<minfilter>LINEAR</minfilter>
+						<magfilter>LINEAR</magfilter>
+					</sampler2D>
+				</newparam>
+				<technique sid="COMMON">
+					<phong>
+						<diffuse>
+							<texture texture="WpnPrimBeamSwordB-sampler" texcoord="TEXCOORD0" />
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="WpnPrimBeamSword_BeamSwordBH-fx" name="WpnPrimBeamSword_BeamSwordBH">
+			<profile_COMMON>
+				<newparam sid="WpnPrimBeamSwordB-surface">
+					<surface type="2D">
+						<init_from>
+							<ref>WpnPrimBeamSwordB-image</ref>
+						</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="WpnPrimBeamSwordB-sampler">
+					<sampler2D>
+						<source>WpnPrimBeamSwordB-surface</source>
+						<instance_image url="#WpnPrimBeamSwordB-image" />
+						<wrap_s>WRAP</wrap_s>
+						<wrap_t>WRAP</wrap_t>
+						<minfilter>LINEAR</minfilter>
+						<magfilter>LINEAR</magfilter>
+					</sampler2D>
+				</newparam>
+				<technique sid="COMMON">
+					<phong>
+						<diffuse>
+							<texture texture="WpnPrimBeamSwordB-sampler" texcoord="TEXCOORD0" />
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_geometries>
+		<geometry id="polygon0" name="polygon0">
+			<mesh>
+				<source id="polygon0_Positions">
+					<float_array id="polygon0_PosArr" count="105">0 0.8967285 -0.3032227 -0.2626953 0.8967285 -0.1516113 0 0.4484863 -0.5336914 -0.4621582 0.4484863 0 0.2626953 0.8967285 -0.1516113 0.4621582 0.4484863 0 0 0.8967285 0.3032227 0.2626953 0.8967285 0.1516113 0 0.4484863 0.5336914 -0.2626953 0.8967285 0.1516113 0.3105469 3.362793 -0.1791992 0.3046875 4.311768 -0.1760254 0 3.362793 -0.3586426 0 4.311768 -0.3520508 0.3105469 3.362793 0.1791992 0.3046875 4.311768 0.1760254 0 3.362793 0.3586426 0 4.311768 0.3520508 -0.3105469 3.362793 0.1791992 -0.3046875 4.311768 0.1760254 -0.3105469 3.362793 -0.1791992 -0.3046875 4.311768 -0.1760254 0 4.300049 -0.7026367 0 5 -0.7729492 -0.6086426 4.300049 -0.3513184 -0.6694336 5 -0.3864746 0.6086426 4.300049 -0.3513184 0.6694336 5 -0.3864746 0.6086426 4.300049 0.3513184 0.6694336 5 0.3864746 0 4.300049 0.7026367 0 5 0.7729492 -0.6086426 4.300049 0.3513184 -0.6694336 5 0.3864746 0 0 0</float_array>
+					<technique_common>
+						<accessor source="#polygon0_PosArr" count="35" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Normals">
+					<float_array id="polygon0_NormArr" count="111">-0.4567871 0.4065552 -0.7911987 -0.6188965 0.2669067 -0.7387085 -0.7509766 0.1142578 -0.6503906 0.4567871 0.4065552 -0.7911987 0.6188965 0.2669067 -0.7387085 0.7509766 0.1142578 -0.6503906 0.4567871 0.4065552 0.7911987 0.6188965 0.2669067 0.7387085 0.7509766 0.1142578 0.6503906 -0.4567871 0.4065552 0.7911987 -0.6188965 0.2669067 0.7387085 -0.7509766 0.1142578 0.6503906 0.5 0.00604248 -0.8660278 1 0.00604248 0 0.5 0.00604248 0.8660278 -0.5 0.00604248 0.8660278 -1 0.00604248 0 -0.5 0.00604248 -0.8660278 -0.4998779 -0.01940918 -0.8658447 0.4998779 -0.01940918 -0.8658447 0.9998169 -0.01940918 0 0.4998779 -0.01940918 0.8658447 -0.4998779 -0.01940918 0.8658447 -0.9998169 -0.01940918 0 -0.4981079 -0.08660889 -0.862793 0.4981079 -0.08660889 -0.862793 0.9962158 -0.08660889 0 0.4981079 -0.08660889 0.862793 -0.4981079 -0.08660889 0.862793 -0.9962158 -0.08660889 0 0 -1 0 0.9136353 0.4065552 0 -0.9136353 0.4065552 0 -0.5963135 -0.614624 -0.5164185 0.5963135 -0.614624 -0.5164185 0.5963135 -0.614624 0.5164185 -0.5963135 -0.614624 0.5164185</float_array>
+					<technique_common>
+						<accessor source="#polygon0_NormArr" count="37" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_UVs0">
+					<float_array id="polygon0_UVArr0" count="60">0.9777832 0.3999939 0.8438416 0.3999939 0.9777832 0.2000122 0.7500305 0.2000122 0.5222473 0.3999939 0.6562195 0.3999939 0.5222473 0.2000122 0.8438416 0.7404785 0.8438416 1 0.9777832 0.7404785 0.9777832 1 0.6562195 0.7404785 0.6562195 1 0.5222473 0.7404785 0.5222473 1 0.4761963 0.3735046 0.4761963 0.1572571 0.3586731 0.3735046 0.3586731 0.1572571 0.1236572 0.3735046 0.1236572 0.1572571 0.006134033 0.3735046 0.006134033 0.1572571 0.2312927 0.1329346 0.2900696 0.1329346 0.2019043 0.08203125 0.2312927 0.03112793 0.2900696 0.03112793 0.3194885 0.08203125 0.7500305 0</float_array>
+					<technique_common>
+						<accessor source="#polygon0_UVArr0" count="30" stride="2">
+							<param name="S" type="float" />
+							<param name="T" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="polygon0_Vertices">
+					<input semantic="POSITION" source="#polygon0_Positions" />
+				</vertices>
+				<triangles material="WpnPrimBeamSword_BeamSwordB" count="54">
+					<input semantic="VERTEX" source="#polygon0_Vertices" offset="0" />
+					<input semantic="NORMAL" source="#polygon0_Normals" offset="1" />
+					<input semantic="TEXCOORD" source="#polygon0_UVs0" set="0" offset="2" />
+					<p>2 1 2 1 1 1 0 0 0 3 2 3 1 1 1 2 1 2 4 4 1 2 4 2 0 3 0 5 5 3 2 4 2 4 4 1 8 7 6 7 7 5 6 6 4 5 8 3 7 7 5 8 7 6 9 10 5 8 10 6 6 9 4 3 11 3 8 10 6 9 10 5 12 12 9 11 12 8 10 12 7 13 12 10 11 12 8 12 12 9 10 13 7 15 13 12 14 13 11 11 13 8 15 13 12 10 13 7 14 14 11 17 14 14 16 14 13 15 14 12 17 14 14 14 14 11 16 15 13 19 15 12 18 15 11 17 15 14 19 15 12 16 15 13 18 16 11 21 16 8 20 16 7 19 16 12 21 16 8 18 16 11 20 17 7 13 17 10 12 17 9 21 17 8 13 17 10 20 17 7 1 18 1 12 18 9 0 18 0 20 18 7 12 18 9 1 18 1 0 19 0 10 19 7 4 19 1 12 19 9 10 19 7 0 19 0 4 20 1 14 20 11 7 20 5 10 20 7 14 20 11 4 20 1 7 21 5 16 21 13 6 21 4 14 21 11 16 21 13 7 21 5 6 22 4 18 22 11 9 22 5 16 22 13 18 22 11 6 22 4 9 23 5 20 23 7 1 23 1 18 23 11 20 23 7 9 23 5 24 24 17 23 24 16 22 24 15 25 24 18 23 24 16 24 24 17 22 25 15 27 25 18 26 25 17 23 25 16 27 25 18 22 25 15 26 26 17 29 26 20 28 26 19 27 26 18 29 26 20 26 26 17 28 27 19 31 27 22 30 27 21 29 27 20 31 27 22 28 27 19 30 28 21 33 28 20 32 28 19 31 28 22 33 28 20 30 28 21 32 29 19 25 29 18 24 29 17 33 29 20 25 29 18 32 29 19 22 30 25 32 30 24 24 30 23 26 30 26 32 30 24 22 30 25 28 30 27 32 30 24 26 30 26 30 30 28 32 30 24 28 30 27 5 31 3 4 31 1 7 31 5 3 32 3 9 32 5 1 32 1 34 33 29 3 33 3 2 33 2 34 34 29 2 34 2 5 34 3 34 35 29 5 35 3 8 35 6 34 36 29 8 36 6 3 36 3</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="polygon1" name="polygon1">
+			<mesh>
+				<source id="polygon1_Positions">
+					<float_array id="polygon1_PosArr" count="21">0.6694336 5 -0.3864746 0.6694336 5 0.3864746 0 5 0 0 5 0.7729492 -0.6694336 5 0.3864746 0 5 -0.7729492 -0.6694336 5 -0.3864746</float_array>
+					<technique_common>
+						<accessor source="#polygon1_PosArr" count="7" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon1_Normals">
+					<float_array id="polygon1_NormArr" count="3">0 1 0</float_array>
+					<technique_common>
+						<accessor source="#polygon1_NormArr" count="1" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon1_UVs0">
+					<float_array id="polygon1_UVArr0" count="6">0.0078125 0.5039063 0.4921875 0.5039063 0.2421875 0.953125</float_array>
+					<technique_common>
+						<accessor source="#polygon1_UVArr0" count="3" stride="2">
+							<param name="S" type="float" />
+							<param name="T" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="polygon1_Vertices">
+					<input semantic="POSITION" source="#polygon1_Positions" />
+				</vertices>
+				<triangles material="WpnPrimBeamSword_BeamSwordBH" count="6">
+					<input semantic="VERTEX" source="#polygon1_Vertices" offset="0" />
+					<input semantic="NORMAL" source="#polygon1_Normals" offset="1" />
+					<input semantic="TEXCOORD" source="#polygon1_UVs0" set="0" offset="2" />
+					<p>2 0 2 1 0 1 0 0 0 3 0 0 1 0 1 2 0 2 4 0 1 3 0 0 2 0 2 5 0 1 2 0 2 0 0 0 6 0 0 2 0 2 5 0 1 2 0 2 6 0 0 4 0 1</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="polygon2" name="polygon2">
+			<mesh>
+				<source id="polygon2_Positions">
+					<float_array id="polygon2_PosArr" count="171">3.970703 5.386719 3.970703 1.871094 4.129883 1.871094 2.006836 5.977539 2.006836 0 5.657227 0 2.006836 11.35938 2.006836 0 15.53809 0 2.006836 14.00684 2.006836 1.833984 15.53809 1.833984 5.589844 15.53809 5.589844 4.400391 18.13281 4.400391 2.401367 19.89258 2.401367 0.7792969 17.52148 0.7792969 0 20.47656 0 0 17.78613 0 -0.7792969 17.52148 -0.7792969 -1.458984 16.77539 -1.458984 -1.833984 15.53809 -1.833984 -4.400391 18.13281 -4.400391 -5.589844 15.53809 -5.589844 3.970703 5.386719 -3.970703 1.871094 4.129883 -1.871094 2.006836 5.977539 -2.006836 2.006836 11.35938 -2.006836 2.006836 14.00684 -2.006836 1.833984 15.53809 -1.833984 5.589844 15.53809 -5.589844 4.400391 18.13281 -4.400391 2.401367 19.89258 -2.401367 0.7792969 17.52148 -0.7792969 -0.7792969 17.52148 0.7792969 -1.458984 16.77539 1.458984 -1.833984 15.53809 1.833984 -4.400391 18.13281 4.400391 -5.589844 15.53809 5.589844 5.59375 7.180664 5.59375 6.020508 12.47656 6.020508 0 3.638672 0 -1.871094 4.129883 -1.871094 -2.006836 5.977539 -2.006836 -3.970703 5.386719 -3.970703 -5.59375 7.180664 -5.59375 -2.006836 14.00684 -2.006836 -2.006836 11.35938 -2.006836 5.59375 7.180664 -5.59375 6.020508 12.47656 -6.020508 -1.871094 4.129883 1.871094 -2.006836 5.977539 2.006836 -3.970703 5.386719 3.970703 -5.59375 7.180664 5.59375 -2.006836 14.00684 2.006836 -2.006836 11.35938 2.006836 1.458984 16.77539 1.458984 -6.020508 12.47656 -6.020508 1.458984 16.77539 -1.458984 -6.020508 12.47656 6.020508 -2.401367 19.89258 -2.401367 -2.401367 19.89258 2.401367</float_array>
+					<technique_common>
+						<accessor source="#polygon2_PosArr" count="57" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon2_Normals">
+					<float_array id="polygon2_NormArr" count="6">-0.703125 0 0.703125 0.703125 0 0.703125</float_array>
+					<technique_common>
+						<accessor source="#polygon2_NormArr" count="2" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon2_Colors0">
+					<float_array id="polygon2_ColorArr0" count="12">0 0 0 1 0.2901961 0.3019608 0.2901961 1 1 1 1 1</float_array>
+					<technique_common>
+						<accessor source="#polygon2_ColorArr0" count="3" stride="4">
+							<param name="R" type="float" />
+							<param name="G" type="float" />
+							<param name="B" type="float" />
+							<param name="A" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon2_UVs0">
+					<float_array id="polygon2_UVArr0" count="34">0.6730347 0.1484375 0.6737061 0.1171875 0.6605835 0.1796875 0.6737061 0.1796875 0.6605835 0.3046875 0.6737061 0.4296875 0.6605835 0.3359375 0.6605835 0.3984375 0.6855164 0.3671875 0.6855164 0.4921875 0.6855164 0.6171875 0.6605835 0.5234375 0.6855164 0.7421875 0.6605835 0.5859375 0.6605835 0.4609375 0.6855164 0.1796875 0.6855164 0.2421875</float_array>
+					<technique_common>
+						<accessor source="#polygon2_UVArr0" count="17" stride="2">
+							<param name="S" type="float" />
+							<param name="T" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="polygon2_Vertices">
+					<input semantic="POSITION" source="#polygon2_Positions" />
+				</vertices>
+				<triangles material="WpnPrimBeamSword_BeamSwordA" count="88">
+					<input semantic="VERTEX" source="#polygon2_Vertices" offset="0" />
+					<input semantic="NORMAL" source="#polygon2_Normals" offset="1" />
+					<input semantic="COLOR" source="#polygon2_Colors0" set="0" offset="2" />
+					<input semantic="TEXCOORD" source="#polygon2_UVs0" set="0" offset="3" />
+					<p>2 0 1 2 1 0 0 1 0 0 0 0 3 0 2 3 1 0 0 1 2 0 1 2 4 0 1 4 3 0 2 3 2 0 1 2 5 0 2 5 3 0 2 3 4 0 1 4 6 0 1 6 5 0 2 5 4 0 1 4 7 0 1 7 5 0 2 5 6 0 1 6 8 0 0 8 7 0 1 7 6 0 1 6 9 0 0 9 7 0 1 7 8 0 0 8 12 0 0 12 11 0 1 11 10 0 0 10 13 0 1 13 11 0 1 11 12 0 0 12 14 0 1 11 13 0 1 13 12 0 0 12 5 0 2 5 13 0 1 13 14 0 1 11 15 0 1 14 5 0 2 5 14 0 1 11 16 0 1 7 5 0 2 5 15 0 1 14 17 0 0 9 16 0 1 7 15 0 1 14 18 0 0 8 16 0 1 7 17 0 0 9 21 1 1 2 20 1 0 1 19 1 0 0 3 1 2 3 20 1 0 1 21 1 1 2 22 1 1 4 3 1 2 3 21 1 1 2 5 1 2 5 3 1 2 3 22 1 1 4 23 1 1 6 5 1 2 5 22 1 1 4 24 1 1 7 5 1 2 5 23 1 1 6 25 1 0 8 24 1 1 7 23 1 1 6 26 1 0 9 24 1 1 7 25 1 0 8 12 1 0 12 28 1 1 11 27 1 0 10 13 1 1 13 28 1 1 11 12 1 0 12 29 1 1 11 13 1 1 13 12 1 0 12 5 1 2 5 13 1 1 13 29 1 1 11 30 1 1 14 5 1 2 5 29 1 1 11 31 1 1 7 5 1 2 5 30 1 1 14 32 1 0 9 31 1 1 7 30 1 1 14 33 1 0 8 31 1 1 7 32 1 0 9 34 0 0 15 2 0 1 2 0 0 0 0 4 0 1 4 2 0 1 2 34 0 0 15 35 0 0 16 4 0 1 4 34 0 0 15 6 0 1 6 4 0 1 4 35 0 0 16 8 0 0 8 6 0 1 6 35 0 0 16 3 0 2 3 36 0 0 1 1 0 0 1 37 0 0 1 36 0 0 1 3 0 2 3 38 0 1 2 37 0 0 1 3 0 2 3 39 0 0 0 37 0 0 1 38 0 1 2 40 0 0 15 39 0 0 0 38 0 1 2 41 0 1 6 16 0 1 7 18 0 0 8 5 0 2 5 16 0 1 7 41 0 1 6 42 0 1 4 5 0 2 5 41 0 1 6 3 0 2 3 5 0 2 5 42 0 1 4 38 0 1 2 3 0 2 3 42 0 1 4 43 1 0 15 21 1 1 2 19 1 0 0 22 1 1 4 21 1 1 2 43 1 0 15 44 1 0 16 22 1 1 4 43 1 0 15 23 1 1 6 22 1 1 4 44 1 0 16 25 1 0 8 23 1 1 6 44 1 0 16 3 1 2 3 36 1 0 1 20 1 0 1 45 1 0 1 36 1 0 1 3 1 2 3 46 1 1 2 45 1 0 1 3 1 2 3 47 1 0 0 45 1 0 1 46 1 1 2 48 1 0 15 47 1 0 0 46 1 1 2 49 1 1 6 31 1 1 7 33 1 0 8 5 1 2 5 31 1 1 7 49 1 1 6 50 1 1 4 5 1 2 5 49 1 1 6 3 1 2 3 5 1 2 5 50 1 1 4 46 1 1 2 3 1 2 3 50 1 1 4 5 0 2 5 11 0 1 11 13 0 1 13 51 0 1 14 11 0 1 11 5 0 2 5 7 0 1 7 51 0 1 14 5 0 2 5 9 0 0 9 51 0 1 14 7 0 1 7 52 0 0 16 41 0 1 6 18 0 0 8 42 0 1 4 41 0 1 6 52 0 0 16 40 0 0 15 42 0 1 4 52 0 0 16 38 0 1 2 42 0 1 4 40 0 0 15 5 1 2 5 28 1 1 11 13 1 1 13 53 1 1 14 28 1 1 11 5 1 2 5 24 1 1 7 53 1 1 14 5 1 2 5 26 1 0 9 53 1 1 14 24 1 1 7 54 1 0 16 49 1 1 6 33 1 0 8 50 1 1 4 49 1 1 6 54 1 0 16 48 1 0 15 50 1 1 4 54 1 0 16 46 1 1 2 50 1 1 4 48 1 0 15 55 0 0 10 14 0 1 11 12 0 0 12 15 0 1 14 14 0 1 11 55 0 0 10 17 0 0 9 15 0 1 14 55 0 0 10 56 1 0 10 29 1 1 11 12 1 0 12 30 1 1 14 29 1 1 11 56 1 0 10 32 1 0 9 30 1 1 14 56 1 0 10 51 0 1 14 10 0 0 10 11 0 1 11 9 0 0 9 10 0 0 10 51 0 1 14 53 1 1 14 27 1 0 10 28 1 1 11 26 1 0 9 27 1 0 10 53 1 1 14</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="polygon3" name="polygon3">
+			<mesh>
+				<source id="polygon3_Positions">
+					<float_array id="polygon3_PosArr" count="24">-1.060547 5 1.060547 1.060547 5 -1.060547 -1.060547 16 1.060547 1.060547 16 -1.060547 1.060547 5 1.060547 -1.060547 5 -1.060547 1.060547 16 1.060547 -1.060547 16 -1.060547</float_array>
+					<technique_common>
+						<accessor source="#polygon3_PosArr" count="8" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon3_Normals">
+					<float_array id="polygon3_NormArr" count="12">-0.703125 0 -0.703125 -0.703125 0 0.703125 0.703125 0 -0.703125 0.703125 0 0.703125</float_array>
+					<technique_common>
+						<accessor source="#polygon3_NormArr" count="4" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon3_Colors0">
+					<float_array id="polygon3_ColorArr0" count="4">0.6784314 0.8588236 0.482353 1</float_array>
+					<technique_common>
+						<accessor source="#polygon3_ColorArr0" count="1" stride="4">
+							<param name="R" type="float" />
+							<param name="G" type="float" />
+							<param name="B" type="float" />
+							<param name="A" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon3_UVs0">
+					<float_array id="polygon3_UVArr0" count="8">0 0 1 0 0 1 1 1</float_array>
+					<technique_common>
+						<accessor source="#polygon3_UVArr0" count="4" stride="2">
+							<param name="S" type="float" />
+							<param name="T" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="polygon3_Vertices">
+					<input semantic="POSITION" source="#polygon3_Positions" />
+				</vertices>
+				<triangles material="WpnPrimBeamSword_BeamSwordA" count="8">
+					<input semantic="VERTEX" source="#polygon3_Vertices" offset="0" />
+					<input semantic="NORMAL" source="#polygon3_Normals" offset="1" />
+					<input semantic="COLOR" source="#polygon3_Colors0" set="0" offset="2" />
+					<input semantic="TEXCOORD" source="#polygon3_UVs0" set="0" offset="3" />
+					<p>2 0 0 2 1 0 0 1 0 0 0 0 3 0 0 3 1 0 0 1 2 0 0 2 6 1 0 2 5 1 0 1 4 1 0 0 7 1 0 3 5 1 0 1 6 1 0 2 5 2 0 1 6 2 0 2 4 2 0 0 7 2 0 3 6 2 0 2 5 2 0 1 1 3 0 1 2 3 0 2 0 3 0 0 3 3 0 3 2 3 0 2 1 3 0 1</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_controllers>
+		<controller id="polygon0_Controller">
+			<skin source="#polygon0">
+				<bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+				<source id="polygon0_Joints">
+					<Name_array id="polygon0_JointArr" count="6">WpnPrimBeamSword_TopN WpnPrimBeamSword_HaveN WpnPrimBeamSword_RotN WpnPrimBeamSword_BeamSwordBM WpnPrimBeamSword_EdgeN WpnPrimBeamSword_BeamSwordAM</Name_array>
+					<technique_common>
+						<accessor source="#polygon0_JointArr" count="6">
+							<param name="JOINT" type="Name" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Matrices">
+					<float_array id="polygon0_MatArr" count="96">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 -2.580345 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 -2.580345 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 -5 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_MatArr" count="6" stride="16">
+							<param type="float4x4" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Weights">
+					<float_array id="polygon0_WeightArr" count="1">1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_WeightArr" count="1">
+							<param type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#polygon0_Joints" />
+					<input semantic="INV_BIND_MATRIX" source="#polygon0_Matrices" />
+				</joints>
+				<vertex_weights count="35">
+					<input semantic="JOINT" offset="0" source="#polygon0_Joints" />
+					<input semantic="WEIGHT" offset="1" source="#polygon0_Weights" />
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+					<v>3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+		<controller id="polygon1_Controller">
+			<skin source="#polygon1">
+				<bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+				<source id="polygon1_Joints">
+					<Name_array id="polygon1_JointArr" count="6">WpnPrimBeamSword_TopN WpnPrimBeamSword_HaveN WpnPrimBeamSword_RotN WpnPrimBeamSword_BeamSwordBM WpnPrimBeamSword_EdgeN WpnPrimBeamSword_BeamSwordAM</Name_array>
+					<technique_common>
+						<accessor source="#polygon1_JointArr" count="6">
+							<param name="JOINT" type="Name" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon1_Matrices">
+					<float_array id="polygon1_MatArr" count="96">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 -2.580345 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 -2.580345 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 -5 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#polygon1_MatArr" count="6" stride="16">
+							<param type="float4x4" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon1_Weights">
+					<float_array id="polygon1_WeightArr" count="1">1</float_array>
+					<technique_common>
+						<accessor source="#polygon1_WeightArr" count="1">
+							<param type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#polygon1_Joints" />
+					<input semantic="INV_BIND_MATRIX" source="#polygon1_Matrices" />
+				</joints>
+				<vertex_weights count="7">
+					<input semantic="JOINT" offset="0" source="#polygon1_Joints" />
+					<input semantic="WEIGHT" offset="1" source="#polygon1_Weights" />
+					<vcount>1 1 1 1 1 1 1</vcount>
+					<v>3 0 3 0 3 0 3 0 3 0 3 0 3 0</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+		<controller id="polygon2_Controller">
+			<skin source="#polygon2">
+				<bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+				<source id="polygon2_Joints">
+					<Name_array id="polygon2_JointArr" count="6">WpnPrimBeamSword_TopN WpnPrimBeamSword_HaveN WpnPrimBeamSword_RotN WpnPrimBeamSword_BeamSwordBM WpnPrimBeamSword_EdgeN WpnPrimBeamSword_BeamSwordAM</Name_array>
+					<technique_common>
+						<accessor source="#polygon2_JointArr" count="6">
+							<param name="JOINT" type="Name" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon2_Matrices">
+					<float_array id="polygon2_MatArr" count="96">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 -2.580345 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 -2.580345 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 -5 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#polygon2_MatArr" count="6" stride="16">
+							<param type="float4x4" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon2_Weights">
+					<float_array id="polygon2_WeightArr" count="1">1</float_array>
+					<technique_common>
+						<accessor source="#polygon2_WeightArr" count="1">
+							<param type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#polygon2_Joints" />
+					<input semantic="INV_BIND_MATRIX" source="#polygon2_Matrices" />
+				</joints>
+				<vertex_weights count="57">
+					<input semantic="JOINT" offset="0" source="#polygon2_Joints" />
+					<input semantic="WEIGHT" offset="1" source="#polygon2_Weights" />
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+					<v>5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+		<controller id="polygon3_Controller">
+			<skin source="#polygon3">
+				<bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+				<source id="polygon3_Joints">
+					<Name_array id="polygon3_JointArr" count="6">WpnPrimBeamSword_TopN WpnPrimBeamSword_HaveN WpnPrimBeamSword_RotN WpnPrimBeamSword_BeamSwordBM WpnPrimBeamSword_EdgeN WpnPrimBeamSword_BeamSwordAM</Name_array>
+					<technique_common>
+						<accessor source="#polygon3_JointArr" count="6">
+							<param name="JOINT" type="Name" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon3_Matrices">
+					<float_array id="polygon3_MatArr" count="96">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 -2.580345 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 -2.580345 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 -5 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#polygon3_MatArr" count="6" stride="16">
+							<param type="float4x4" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon3_Weights">
+					<float_array id="polygon3_WeightArr" count="1">1</float_array>
+					<technique_common>
+						<accessor source="#polygon3_WeightArr" count="1">
+							<param type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#polygon3_Joints" />
+					<input semantic="INV_BIND_MATRIX" source="#polygon3_Matrices" />
+				</joints>
+				<vertex_weights count="8">
+					<input semantic="JOINT" offset="0" source="#polygon3_Joints" />
+					<input semantic="WEIGHT" offset="1" source="#polygon3_Weights" />
+					<vcount>1 1 1 1 1 1 1 1</vcount>
+					<v>5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+	</library_controllers>
+	<library_visual_scenes>
+		<visual_scene id="RootNode" name="RootNode">
+			<node id="WpnPrimBeamSword_TopN" name="WpnPrimBeamSword_TopN" sid="WpnPrimBeamSword_TopN" type="JOINT">
+				<node id="WpnPrimBeamSword_HaveN" name="WpnPrimBeamSword_HaveN" sid="WpnPrimBeamSword_HaveN" type="JOINT">
+					<translate>0 2.580345 0</translate>
+					<node id="WpnPrimBeamSword_RotN" name="WpnPrimBeamSword_RotN" sid="WpnPrimBeamSword_RotN" type="JOINT">
+						<node id="WpnPrimBeamSword_BeamSwordBM" name="WpnPrimBeamSword_BeamSwordBM" sid="WpnPrimBeamSword_BeamSwordBM" type="JOINT">
+							<translate>0 -2.580345 0</translate>
+						</node>
+						<node id="WpnPrimBeamSword_EdgeN" name="WpnPrimBeamSword_EdgeN" sid="WpnPrimBeamSword_EdgeN" type="JOINT">
+							<translate>0 2.419655 0</translate>
+							<node id="WpnPrimBeamSword_BeamSwordAM" name="WpnPrimBeamSword_BeamSwordAM" sid="WpnPrimBeamSword_BeamSwordAM" type="JOINT">
+								<translate>0 -5 0</translate>
+							</node>
+						</node>
+					</node>
+				</node>
+			</node>
+			<node id="polygon0" name="polygon0" type="NODE">
+				<instance_controller url="#polygon0_Controller">
+					<skeleton>#WpnPrimBeamSword_TopN</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="WpnPrimBeamSword_BeamSwordB" target="#WpnPrimBeamSword_BeamSwordB">
+								<bind_vertex_input semantic="TEXCOORD0" input_semantic="TEXCOORD" input_set="0" />
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+			<node id="polygon1" name="polygon1" type="NODE">
+				<instance_controller url="#polygon1_Controller">
+					<skeleton>#WpnPrimBeamSword_TopN</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="WpnPrimBeamSword_BeamSwordBH" target="#WpnPrimBeamSword_BeamSwordBH">
+								<bind_vertex_input semantic="TEXCOORD0" input_semantic="TEXCOORD" input_set="0" />
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+			<node id="polygon2" name="polygon2" type="NODE">
+				<instance_controller url="#polygon2_Controller">
+					<skeleton>#WpnPrimBeamSword_TopN</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="WpnPrimBeamSword_BeamSwordA" target="#WpnPrimBeamSword_BeamSwordA">
+								<bind_vertex_input semantic="TEXCOORD0" input_semantic="TEXCOORD" input_set="0" />
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+			<node id="polygon3" name="polygon3" type="NODE">
+				<instance_controller url="#polygon3_Controller">
+					<skeleton>#WpnPrimBeamSword_TopN</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="WpnPrimBeamSword_BeamSwordA" target="#WpnPrimBeamSword_BeamSwordA">
+								<bind_vertex_input semantic="TEXCOORD0" input_semantic="TEXCOORD" input_set="0" />
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#RootNode" />
+	</scene>
+</COLLADA>

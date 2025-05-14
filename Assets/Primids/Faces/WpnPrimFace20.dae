@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.5.0" xmlns="http://www.collada.org/2008/03/COLLADASchema">
+	<asset>
+		<contributor>
+			<authoring_tool>BrawlBox</authoring_tool>
+		</contributor>
+		<created>2015-01-20T02:48:07Z</created>
+		<modified>2015-01-20T02:48:07Z</modified>
+		<unit meter="0.01" name="centimeter" />
+		<up_axis>Y_UP</up_axis>
+	</asset>
+	<library_images>
+		<image id="WpnPrimFace20-image" name="WpnPrimFace20">
+			<init_from>
+				<ref>WpnPrimFace20.png</ref>
+			</init_from>
+		</image>
+	</library_images>
+	<library_materials>
+		<material id="WpnPrimFace20_Face20">
+			<instance_effect url="#WpnPrimFace20_Face20-fx" />
+		</material>
+	</library_materials>
+	<library_effects>
+		<effect id="WpnPrimFace20_Face20-fx" name="WpnPrimFace20_Face20">
+			<profile_COMMON>
+				<newparam sid="WpnPrimFace20-surface">
+					<surface type="2D">
+						<init_from>
+							<ref>WpnPrimFace20-image</ref>
+						</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="WpnPrimFace20-sampler">
+					<sampler2D>
+						<source>WpnPrimFace20-surface</source>
+						<instance_image url="#WpnPrimFace20-image" />
+						<wrap_s>CLAMP</wrap_s>
+						<wrap_t>CLAMP</wrap_t>
+						<minfilter>LINEAR</minfilter>
+						<magfilter>LINEAR</magfilter>
+					</sampler2D>
+				</newparam>
+				<technique sid="COMMON">
+					<phong>
+						<diffuse>
+							<texture texture="WpnPrimFace20-sampler" texcoord="TEXCOORD0" />
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_geometries>
+		<geometry id="polygon0" name="polygon0">
+			<mesh>
+				<source id="polygon0_Positions">
+					<float_array id="polygon0_PosArr" count="75">1.166653 13.71341 1.454876 1.254359 13.02908 1.681302 0 13.78288 1.963652 0 13.10251 2.219966 -1.254359 13.02908 1.681302 0 12.4141 2.286347 -1.238495 12.34208 1.758004 -1.108672 11.74756 1.702921 -1.994498 12.2157 0.824241 -1.784438 11.63008 0.834357 1.238495 12.34208 1.758004 1.108672 11.74756 1.702921 1.994498 12.2157 0.824241 1.784438 11.63008 0.834357 1.255504 10.98921 0.729459 0.770091 11.07467 1.34153 0 11.80755 2.14314 0 11.1134 1.625115 -0.770091 11.07467 1.34153 1.887684 13.59474 0.585799 2.020166 12.90155 0.739125 -1.255504 10.98921 0.729459 -1.166653 13.71341 1.454876 -1.887684 13.59474 0.585799 -2.020166 12.90155 0.739125</float_array>
+					<technique_common>
+						<accessor source="#polygon0_PosArr" count="25" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Normals">
+					<float_array id="polygon0_NormArr" count="75">0.589798 0.320799 0.741098 0.603074 0.195209 0.773431 0 0.357838 0.933784 0 0.226479 0.974016 -0.603075 0.195209 0.77343 0 -0.055071 0.998482 -0.596585 -0.063186 0.800059 -0.550927 -0.387953 0.738899 -0.769945 -0.095374 0.630943 -0.684373 -0.427936 0.590342 0.596584 -0.063186 0.800059 0.550927 -0.387954 0.738899 0.769945 -0.095374 0.630943 0.684373 -0.427936 0.590342 0.594689 -0.588272 0.547979 0.381673 -0.586828 0.714114 0 -0.480953 0.876746 0 -0.598086 0.801432 -0.381672 -0.586828 0.714114 0.759728 0.283092 0.585382 0.776308 0.162928 0.608934 -0.594689 -0.588272 0.547979 -0.589798 0.320799 0.741098 -0.759728 0.283092 0.585382 -0.776308 0.162928 0.608934</float_array>
+					<technique_common>
+						<accessor source="#polygon0_NormArr" count="25" stride="3">
+							<param name="X" type="float" />
+							<param name="Y" type="float" />
+							<param name="Z" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Colors0">
+					<float_array id="polygon0_ColorArr0" count="4">0.5019608 0.5019608 0.5019608 1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_ColorArr0" count="1" stride="4">
+							<param name="R" type="float" />
+							<param name="G" type="float" />
+							<param name="B" type="float" />
+							<param name="A" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_UVs0">
+					<float_array id="polygon0_UVArr0" count="30">0.560696 1.158956 0.6 0.79823 0 1.158956 0 0.79823 0 0.5 0.6 0.5 0.560696 0.20177 1 0.5 0.960696 0.20177 0.876473 -0.1 0.476473 -0.1 0 0.20177 0 -0.1 0.960696 1.158956 1 0.79823</float_array>
+					<technique_common>
+						<accessor source="#polygon0_UVArr0" count="15" stride="2">
+							<param name="S" type="float" />
+							<param name="T" type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="polygon0_Vertices">
+					<input semantic="POSITION" source="#polygon0_Positions" />
+				</vertices>
+				<triangles material="WpnPrimFace20_Face20" count="32">
+					<input semantic="VERTEX" source="#polygon0_Vertices" offset="0" />
+					<input semantic="NORMAL" source="#polygon0_Normals" offset="1" />
+					<input semantic="COLOR" source="#polygon0_Colors0" set="0" offset="2" />
+					<input semantic="TEXCOORD" source="#polygon0_UVs0" set="0" offset="3" />
+					<p>2 2 0 2 1 1 0 1 0 0 0 0 3 3 0 3 1 1 0 1 2 2 0 2 4 4 0 1 3 3 0 3 2 2 0 2 5 5 0 4 3 3 0 3 4 4 0 1 6 6 0 5 5 5 0 4 4 4 0 1 7 7 0 6 5 5 0 4 6 6 0 5 8 8 0 7 7 7 0 6 6 6 0 5 9 9 0 8 7 7 0 6 8 8 0 7 5 5 0 4 1 1 0 1 3 3 0 3 10 10 0 5 1 1 0 1 5 5 0 4 11 11 0 6 10 10 0 5 5 5 0 4 12 12 0 7 10 10 0 5 11 11 0 6 13 13 0 8 12 12 0 7 11 11 0 6 11 11 0 6 14 14 0 9 13 13 0 8 15 15 0 10 14 14 0 9 11 11 0 6 16 16 0 11 15 15 0 10 11 11 0 6 17 17 0 12 15 15 0 10 16 16 0 11 18 18 0 10 17 17 0 12 16 16 0 11 1 1 0 1 19 19 0 13 0 0 0 0 20 20 0 14 19 19 0 13 1 1 0 1 12 12 0 7 20 20 0 14 1 1 0 1 7 7 0 6 18 18 0 10 16 16 0 11 21 21 0 9 18 18 0 10 7 7 0 6 9 9 0 8 21 21 0 9 7 7 0 6 5 5 0 4 16 16 0 11 11 11 0 6 7 7 0 6 16 16 0 11 5 5 0 4 22 22 0 0 4 4 0 1 2 2 0 2 23 23 0 13 4 4 0 1 22 22 0 0 24 24 0 14 4 4 0 1 23 23 0 13 8 8 0 7 4 4 0 1 24 24 0 14 12 12 0 7 1 1 0 1 10 10 0 5 6 6 0 5 4 4 0 1 8 8 0 7</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_controllers>
+		<controller id="polygon0_Controller">
+			<skin source="#polygon0">
+				<bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+				<source id="polygon0_Joints">
+					<Name_array id="polygon0_JointArr" count="5">WpnPrimFace20_TopN WpnPrimFace20_Attach01N WpnPrimFace20_TransN WpnPrimFace20_RotN WpnPrimFace20_Face20M</Name_array>
+					<technique_common>
+						<accessor source="#polygon0_JointArr" count="5">
+							<param name="JOINT" type="Name" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Matrices">
+					<float_array id="polygon0_MatArr" count="80">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 -1E-06 0 1 0 -11.91902 0 0 1 -0.102098 0 0 0 1 1 0 0 -1E-06 0 1 0 -11.91902 0 0 1 -0.102098 0 0 0 1 1 0 0 -1E-06 0 1 0 -11.91902 0 0 1 -0.102098 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_MatArr" count="5" stride="16">
+							<param type="float4x4" />
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polygon0_Weights">
+					<float_array id="polygon0_WeightArr" count="1">1</float_array>
+					<technique_common>
+						<accessor source="#polygon0_WeightArr" count="1">
+							<param type="float" />
+						</accessor>
+					</technique_common>
+				</source>
+				<joints>
+					<input semantic="JOINT" source="#polygon0_Joints" />
+					<input semantic="INV_BIND_MATRIX" source="#polygon0_Matrices" />
+				</joints>
+				<vertex_weights count="25">
+					<input semantic="JOINT" offset="0" source="#polygon0_Joints" />
+					<input semantic="WEIGHT" offset="1" source="#polygon0_Weights" />
+					<vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+					<v>4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0</v>
+				</vertex_weights>
+			</skin>
+		</controller>
+	</library_controllers>
+	<library_visual_scenes>
+		<visual_scene id="RootNode" name="RootNode">
+			<node id="WpnPrimFace20_TopN" name="WpnPrimFace20_TopN" sid="WpnPrimFace20_TopN" type="JOINT">
+				<node id="WpnPrimFace20_Attach01N" name="WpnPrimFace20_Attach01N" sid="WpnPrimFace20_Attach01N" type="JOINT">
+					<translate>1E-06 11.91902 0.102098</translate>
+					<node id="WpnPrimFace20_TransN" name="WpnPrimFace20_TransN" sid="WpnPrimFace20_TransN" type="JOINT">
+						<node id="WpnPrimFace20_RotN" name="WpnPrimFace20_RotN" sid="WpnPrimFace20_RotN" type="JOINT">
+							<node id="WpnPrimFace20_Face20M" name="WpnPrimFace20_Face20M" sid="WpnPrimFace20_Face20M" type="JOINT">
+								<translate>-1E-06 -11.91902 -0.102098</translate>
+							</node>
+						</node>
+					</node>
+				</node>
+			</node>
+			<node id="polygon0" name="polygon0" type="NODE">
+				<instance_controller url="#polygon0_Controller">
+					<skeleton>#WpnPrimFace20_TopN</skeleton>
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="WpnPrimFace20_Face20" target="#WpnPrimFace20_Face20">
+								<bind_vertex_input semantic="TEXCOORD0" input_semantic="TEXCOORD" input_set="0" />
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_controller>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#RootNode" />
+	</scene>
+</COLLADA>
